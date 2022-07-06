@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fc03b027-b9be-42b7-87b8-9a601b27fb43": {
+      "ProjectGuid": "fc03b027-b9be-42b7-87b8-9a601b27fb43",
+      "DisplayName": "WMS",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,0 +1,70 @@
+﻿@page
+@model WMS.Pages.Account.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Login</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Login.UserId" />
+            <div class="form-group">
+                <label asp-for="Login.Username" class="control-label"></label>
+                <input asp-for="Login.Username" class="form-control" />
+                <span asp-validation-for="Login.Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Login.Password" class="control-label"></label>
+                <input asp-for="Login.Password" class="form-control" />
+                <span asp-validation-for="Login.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Login.Email" class="control-label"></label>
+                <input asp-for="Login.Email" class="form-control" />
+                <span asp-validation-for="Login.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Login.Phone" class="control-label"></label>
+                <input asp-for="Login.Phone" class="form-control" />
+                <span asp-validation-for="Login.Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Login.GroupId" class="control-label"></label>
+                <input asp-for="Login.GroupId" class="form-control" />
+                <span asp-validation-for="Login.GroupId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Login.Rankid" class="control-label"></label>
+                <input asp-for="Login.Rankid" class="form-control" />
+                <span asp-validation-for="Login.Rankid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Login.Created" class="control-label"></label>
+                <input asp-for="Login.Created" class="form-control" />
+                <span asp-validation-for="Login.Created" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Login.Modification" class="control-label"></label>
+                <input asp-for="Login.Modification" class="form-control" />
+                <span asp-validation-for="Login.Modification" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

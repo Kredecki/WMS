@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\WMS\\WMS\\WMS.csproj": {}
+    "E:\\WMS\\WMS.csproj": {}
   },
   "projects": {
-    "E:\\WMS\\WMS\\WMS.csproj": {
+    "E:\\WMS\\WMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\WMS\\WMS\\WMS.csproj",
+        "projectUniqueName": "E:\\WMS\\WMS.csproj",
         "projectName": "WMS",
-        "projectPath": "E:\\WMS\\WMS\\WMS.csproj",
+        "projectPath": "E:\\WMS\\WMS.csproj",
         "packagesPath": "C:\\Users\\Mikołaj\\.nuget\\packages\\",
-        "outputPath": "E:\\WMS\\WMS\\obj\\",
+        "outputPath": "E:\\WMS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,32 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
